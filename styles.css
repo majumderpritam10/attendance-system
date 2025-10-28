@@ -1,0 +1,24 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#fff;
+  --accent:#2b7aee;
+  --muted:#666;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body{background:var(--bg);margin:0;padding:20px}
+.container{max-width:900px;margin:0 auto;background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(18,24,40,0.06)}
+h1{margin:0 0 10px}
+.controls{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:16px}
+.controls input{padding:8px;border:1px solid #ddd;border-radius:6px}
+.controls button{padding:8px 10px;border-radius:6px;border:none;background:var(--accent);color:#fff;cursor:pointer}
+section{margin-bottom:18px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left}
+th{background:#fafafa}
+.attendance-actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+.attendance-actions button{padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.attendance-actions button.primary{background:var(--accent);color:#fff;border:none}
+footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+.btn-small{padding:5px 8px;font-size:13px;border-radius:6px}
+.status-select{padding:5px;border-radius:6px}
+#report{padding:8px;background:#fcfcff;border:1px solid #f0f0ff;border-radius:6px}

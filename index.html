@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Attendance Management System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Manager</h1>
+
+    <section class="controls">
+      <div class="left">
+        <input id="studentNameInput" placeholder="Student name (e.g. John Doe)" />
+        <button id="addStudentBtn">Add Student</button>
+      </div>
+
+      <div class="right">
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" />
+        <button id="loadDateBtn">Load</button>
+        <button id="todayBtn">Today</button>
+      </div>
+    </section>
+
+    <section class="students-section">
+      <h2>Students</h2>
+      <table id="studentsTable">
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Action</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="attendance-section">
+      <h2>Attendance</h2>
+      <table id="attendanceTable">
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="attendance-actions">
+        <button id="markAllPresentBtn">Mark All Present</button>
+        <button id="markAllAbsentBtn">Mark All Absent</button>
+        <button id="saveAttendanceBtn">Save Attendance</button>
+        <button id="exportCsvBtn">Export CSV</button>
+        <button id="clearDataBtn" title="Clears all saved attendance & students">Clear All Data</button>
+      </div>
+    </section>
+
+    <section class="report-section">
+      <h2>Report</h2>
+      <div id="report"></div>
+    </section>
+
+    <footer>
+      Built with HTML/CSS/JS • Stores data in browser localStorage
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
